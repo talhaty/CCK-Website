@@ -1,0 +1,32 @@
+<body background="a.jpg">
+<center><font color=white size=7 face=terminal><u>CCK LOGIN</font></u></center>
+
+<br><br><br><br><br><br><br><br><br><br><center>
+<table border=2 cellpadding=4>
+<td>
+<form name="login">
+ <center><font size=6 color=yellow face=arial>Username<input type="text" name="Admin"/></font></center>
+<br><br>
+ <center><font size=6 color=yellow face=arial>Password<input type="password" name="cck"/></font></center>
+ <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+</td>
+</table>
+<script language="javascript">
+function check(form) 
+{
+  if(form.Admin.value == "Admin" && form.cck.value == "cck")
+{
+ window.open("cck.html")
+}
+else
+{
+alert("Error Password or Username")
+}
+}
+</script></center>
+</body>
+
